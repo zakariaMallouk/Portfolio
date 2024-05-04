@@ -31,6 +31,8 @@
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
+  /* --bg:#010103;
+  --border:.1rem solid rgba(255,255,255,.3); */
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -175,7 +177,7 @@ body.dark-theme{
 }
 
 .profile__perfil img{
-  width: 75px;
+  width: 175px;
 }
 
 .profile__border{
@@ -253,6 +255,24 @@ body.dark-theme{
 
 
 /*=============== BUTTONS ===============*/
+.btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: .5rem;
+  column-gap: .5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  transition: .3s;
+  box-shadow: 0 8px 24px hsl(var(--hue), var(--sat), var(--lig), .25);
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: var(--first-color-alt);
+}
+
 .button{
   display: inline-flex;
   align-items: center;
@@ -392,7 +412,7 @@ body.dark-theme{
 
 .skills__data{
   display: flex;
-column-gap: .5rem;
+  column-gap: .5rem;
 }
 
 .skills__data i{
@@ -423,6 +443,51 @@ column-gap: .5rem;
 /* Activate button filter */
 .filter-tab-active{
   background-color: var(--body-color);  
+}
+
+/*=============== ALERT ===============*/
+.alert{
+  display: none;
+}
+/*=============== CONTACT ===============*/
+form .inputBox{
+  display: flex;
+  align-items: center;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+
+form .inputBoxButton{
+  display: flex;
+  align-items: center;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+  padding-left: 35%;
+}
+
+form .inputBox span{
+  color:#fff;
+  font-size: .8rem;
+  padding-left: .1rem;
+  padding-right: .3rem;
+}
+
+form .inputBox input{
+  width: 100%;
+  padding:.2rem;
+  font-size: .9rem;
+  color:#fff;
+  text-transform: none;
+  background:none;
+}
+
+form textarea{
+  width: 100%;
+  padding:2rem;
+  font-size: .9rem;
+  color:#fff;
+  text-transform: none;
+  background:none;
 }
 
 /*=============== FOOTER ===============*/
